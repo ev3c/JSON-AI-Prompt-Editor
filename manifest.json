@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "JSON AI Prompt Editor",
+  "version": "2.0",
+  "description": "Editor visual para archivos JSON de configuración del asistente de prompts de IA",
+  "action": {
+    "default_title": "JSON AI Prompt Editor"
+  },
+  "permissions": [
+    "storage",
+    "tabs",
+    "identity"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["jsonEditor/menu_data_ADD_ES.json"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+} 
