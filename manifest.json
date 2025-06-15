@@ -16,7 +16,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["jsonEditor/menu_data_ADD_ES.json"],
+      "resources": ["jsonEditor/menu_data_ADD_ES.json", "jsonEditor/menu_data_ADD_GB.json"],
       "matches": ["<all_urls>"]
     }
   ]
