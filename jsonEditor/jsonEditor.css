@@ -34,7 +34,19 @@ body {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   padding: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-text {
   text-align: center;
+  flex: 1;
 }
 
 .header h1 {
@@ -46,6 +58,36 @@ body {
   opacity: 0.9;
   font-size: 16px;
   margin: 0;
+}
+
+.language-selector {
+  display: flex;
+  gap: 8px;
+}
+
+.lang-btn {
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  min-width: 45px;
+}
+
+.lang-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.lang-btn.active {
+  background: rgba(255, 255, 255, 0.9);
+  color: #667eea;
+  border-color: white;
+  font-weight: bold;
 }
 
 .file-controls {
@@ -529,9 +571,23 @@ body {
   .header {
     padding: 15px;
   }
+
+  .header-content {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .header-text {
+    order: 1;
+  }
+
+  .language-selector {
+    order: 0;
+    justify-content: center;
+  }
   
   .header h1 {
-    font-size: 28px;
+    font-size: 24px;
   }
   
   .file-controls {
@@ -592,6 +648,12 @@ body {
   
   .json-preview {
     padding: 15px;
+  }
+
+  .lang-btn {
+    font-size: 16px;
+    padding: 6px 10px;
+    min-width: 40px;
   }
 } 
 

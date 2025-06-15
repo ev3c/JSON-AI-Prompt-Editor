@@ -9,8 +9,16 @@
 <body>
   <div class="container">
     <header class="header">
-      <h1>📝 JSON AI Prompt Editor</h1>
-      <p>Editor visual para archivos JSON de AI Prompt Assistant</p>
+      <div class="header-content">
+        <div class="header-text">
+          <h1>📝 JSON AI Prompt Editor</h1>
+          <p>Editor visual para archivos JSON de AI Prompt Assistant</p>
+        </div>
+        <div class="language-selector">
+          <button id="lang-es" class="lang-btn active">🇪🇸</button>
+          <button id="lang-en" class="lang-btn">🇬🇧</button>
+        </div>
+      </div>
     </header>
 
     <div class="file-controls">
@@ -25,7 +33,7 @@
       </div>
       <button id="save-btn" class="btn btn-primary" disabled>💾 Guardar</button>
       <div class="filename-display" id="filename-display">
-        Cargando archivo por defecto...
+        Loading default file...
       </div>
     </div>
 
